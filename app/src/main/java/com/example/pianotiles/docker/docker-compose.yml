@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: musictilesdb
+    container_name: musictilespostgres-local
+    ports:
+      - '5450:5432'
